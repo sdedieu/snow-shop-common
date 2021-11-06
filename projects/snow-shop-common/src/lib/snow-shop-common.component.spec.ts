@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LogoComponent } from './logo.component';
+import { SnowShopCommonComponent } from './snow-shop-common.component';
 
-describe('LogoComponent', () => {
-  let component: LogoComponent;
-  let fixture: ComponentFixture<LogoComponent>;
+describe('SnowShopCommonComponent', () => {
+  let component: SnowShopCommonComponent;
+  let fixture: ComponentFixture<SnowShopCommonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LogoComponent ]
+      declarations: [ SnowShopCommonComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LogoComponent);
+    fixture = TestBed.createComponent(SnowShopCommonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
