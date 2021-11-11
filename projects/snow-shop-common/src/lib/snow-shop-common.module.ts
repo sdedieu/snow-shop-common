@@ -1,5 +1,6 @@
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http'
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
 import { SnowShopCommonComponent } from './snow-shop-common.component';
 
 
@@ -9,6 +10,7 @@ import { SnowShopCommonComponent } from './snow-shop-common.component';
     SnowShopCommonComponent
   ],
   imports: [
+    CommonModule, 
     HttpClientModule
   ],
   exports: [

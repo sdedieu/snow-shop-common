@@ -7,15 +7,15 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class CartService {
 
-  private cartItemsCount$ = new BehaviorSubject<number>(0);
+  public cartItemsCount$ = new BehaviorSubject<number>(0);
 
   constructor(private http: HttpClient) {
     this.fetchCartItemsCount()
    }
 
    fetchCartItemsCount(){
-    this.http.get<number>('http://localhost:3000/cart/count').subscribe(
-      count => this.cartItemsCount$.next(count)
-    );
+   /* this.http.get<{count: number}>('http://localhost:3000/cart/count').subscribe(
+      response => this.cartItemsCount$.next(response.count)
+    ); */
    }
 }
