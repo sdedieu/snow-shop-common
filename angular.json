@@ -1,28 +1,28 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": false
+    "analytics": "892de65e-8ca4-4d9f-80d6-cab0034801e6"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "snow-shop-common": {
+    "snow-shop-lib": {
       "projectType": "library",
-      "root": "projects/snow-shop-common",
-      "sourceRoot": "projects/snow-shop-common/src",
+      "root": "projects/snow-shop-lib",
+      "sourceRoot": "projects/snow-shop-lib/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/snow-shop-common/ng-package.json"
+            "project": "projects/snow-shop-lib/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/snow-shop-common/tsconfig.lib.prod.json"
+              "tsConfig": "projects/snow-shop-lib/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/snow-shop-common/tsconfig.lib.json"
+              "tsConfig": "projects/snow-shop-lib/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -30,13 +30,13 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/snow-shop-common/src/test.ts",
-            "tsConfig": "projects/snow-shop-common/tsconfig.spec.json",
-            "karmaConfig": "projects/snow-shop-common/karma.conf.js"
+            "main": "projects/snow-shop-lib/src/test.ts",
+            "tsConfig": "projects/snow-shop-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/snow-shop-lib/karma.conf.js"
           }
         }
       }
     }
   },
-  "defaultProject": "snow-shop-common"
+  "defaultProject": "snow-shop-lib"
 }

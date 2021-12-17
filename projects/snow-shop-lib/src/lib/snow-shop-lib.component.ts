@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-snow-shop-common',
+  selector: 'lib-snow-shop-lib',
   template: `
     <p>
-      snow-shop-common works!
+      snow-shop-lib works!
     </p>
   `,
   styles: [
   ]
 })
-export class SnowShopCommonComponent implements OnInit {
+export class SnowShopLibComponent implements OnInit {
 
   constructor() { }
 

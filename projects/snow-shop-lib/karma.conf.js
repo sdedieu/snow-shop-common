@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../coverage/snow-shop-common'),
+      dir: require('path').join(__dirname, '../../coverage/snow-shop-lib'),
       subdir: '.',
       reporters: [
         { type: 'html' },

@@ -15,9 +15,9 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "snow-shop-common": [
-        "dist/snow-shop-common/snow-shop-common",
-        "dist/snow-shop-common"
+      "snow-shop-lib": [
+        "dist/snow-shop-lib/snow-shop-lib",
+        "dist/snow-shop-lib"
       ]
     },
     "target": "es2017",

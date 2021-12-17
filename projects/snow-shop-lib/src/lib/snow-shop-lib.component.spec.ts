@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SnowShopCommonComponent } from './snow-shop-common.component';
+import { SnowShopLibComponent } from './snow-shop-lib.component';
 
-describe('SnowShopCommonComponent', () => {
-  let component: SnowShopCommonComponent;
-  let fixture: ComponentFixture<SnowShopCommonComponent>;
+describe('SnowShopLibComponent', () => {
+  let component: SnowShopLibComponent;
+  let fixture: ComponentFixture<SnowShopLibComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SnowShopCommonComponent ]
+      declarations: [ SnowShopLibComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SnowShopCommonComponent);
+    fixture = TestBed.createComponent(SnowShopLibComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
